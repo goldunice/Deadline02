@@ -1,0 +1,435 @@
+/* General Styles */
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstLightRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstLightRegular.woff") format("woff");
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstBlackRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstBlackRegular.woff") format("woff");
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstRegular.woff") format("woff");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstSemiBoldRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstSemiBoldRegular.woff") format("woff");
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstThinRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstThinRegular.woff") format("woff");
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstBoldRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstBoldRegular.woff") format("woff");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "FONTSPRING DEMO - Nekst";
+    src:
+        url("../fonts/FONTSPRINGDEMO-NekstMediumRegular.woff2") format("woff2"),
+        url("../fonts/FONTSPRINGDEMO-NekstMediumRegular.woff") format("woff");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    margin: 0;
+    font-family: "FONTSPRING DEMO - Nekst", sans-serif;
+    background-image: url(assets/main-bg.png);
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    color: #ffffff;
+}
+
+.logo-img {
+    width: 240px;
+    height: 50px;
+    margin-right: 120px;
+}
+
+.logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.logo div {
+    width: 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo span {
+    font-size: 24px;
+}
+
+.content span {
+    font-size: 86px;
+    color: #ffffff;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #5F29B7, #ffffff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+/* Right Section */
+.right-section {
+    flex: 1;
+    margin: auto 40px;
+    width: 400px;
+    height: 800px;
+    padding: 40px;
+    background-color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-section label {
+    @font-face {
+        font-family: FONTSPRINGDEMO-NekstRegular;
+    }
+
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.right-section input {
+    font: inherit;
+    @font-face {
+        font-family: FONTSPRINGDEMO-NekstRegular;
+    }
+
+    font-size: 20px;
+    opacity: 70%;
+}
+
+.signin-form {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.signin-top {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.signin-top span {
+    width: 50px;
+    height: 50px;
+    background-image: url(./assets/cancel.png);
+    border: none;
+}
+
+.signin-btn span:hover {
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 82px;
+    margin: 0;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+form {
+    margin-top: -80px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+input {
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    margin-bottom: 20px;
+    border: none;
+    border-bottom: 2px solid #6e3cfa;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 28px;
+    position: relative;
+    @font-face {
+        font-family: FONTSPRINGDEMO-NekstRegular;
+    }
+}
+
+input:focus {
+    outline: none;
+    border-bottom: 2px solid #8c8cff;
+}
+
+input::placeholder {
+    color: #8C74B4;
+}
+
+/* Password Input with Eye Icon */
+.input-wrapper {
+    position: relative;
+}
+
+.input-wrapper .toggle-visibility {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.input-wrapper .toggle-visibility:hover {
+    color: #ffffff;
+}
+
+/* Sign-in Button */
+.btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 25px;
+    background: #6e3cfa;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background: #8c8cff;
+}
+
+/* Optional: Arrow on the Sign-in Button */
+.btn::after {
+    content: " →";
+    font-size: 16px;
+    margin-left: 5px;
+}
+
+.forgot-password {
+    display: block;
+    text-decoration: none;
+    text-align: right;
+    margin-bottom: 20px;
+    color: #8A4BF0;
+    font-size: 16px;
+}
+
+/* .btn {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+} */
+
+.signin-btn {
+    background: #6e3cfa;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.create-btn {
+    display: block;
+    width: 97%;
+    padding-top: 8px;
+    padding-bottom: 14px;
+    text-decoration: none;
+    background: none;
+    border: 1px solid #6e3cfa;
+    color: #ffffff;
+    font-size: 24px;
+}
+
+.create-btn:hover {
+    background-color: #ffffff;
+    color: #6200ff;
+}
+
+.create-account {
+    font-size: 24px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.create-account span {
+    display: block;
+    margin-bottom: 20px;
+    color: #7A6E8C;
+}
+
+@media (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html,
+    body {
+        width: 100%;
+        height: 100%;
+
+        @font-face {
+            font-family: FONTSPRINGDEMO-NekstRegular;
+        }
+    }
+
+    .container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .right-section {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        background-image: url(./assets/gra.png);
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+    }
+
+    .left-section {
+        display: none;
+    }
+
+    .signin-form {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 30px;
+        
+    }
+
+    .signin-form input{
+        @font-face {
+            font-family: FONTSPRINGDEMO-NekstRegular;
+        }
+    }
+    .signin-top {
+        width: 100%;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .signin-top span {
+        background-image: url(assets/back.png);
+        background-position: center;
+        background-size: 20px;
+        background-repeat: no-repeat;
+        width: 50px;
+        height: 30px;
+        margin-top: 6px;
+        border: 1px solid white;
+        border-radius: 20px;
+
+    }
+  
+    h2 {
+        font-size: 42px;
+        margin-left: 20px;
+        padding: 0;
+    }
+    .create-account{
+        font-size: 14px;
+    }
+    .create-btn{
+        font-size: 18px;
+    }
+    .none{
+        display: none;
+    }
+
+}
